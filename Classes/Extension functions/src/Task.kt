@@ -1,5 +1,7 @@
-fun Int.r(): RationalNumber = TODO()
+fun Int.r(): RationalNumber = RationalNumber(this,1)
 
-fun Pair<Int, Int>.r(): RationalNumber = TODO()
-
-data class RationalNumber(val numerator: Int, val denominator: Int)
+fun Pair<Int, Int>.r(): RationalNumber = RationalNumber(this.first,this.second)
+data class RationalNumber(
+    val numerator: Int,
+    val denominator: Int
+)
